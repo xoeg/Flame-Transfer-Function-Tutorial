@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Learn Thermoacoustics
-
 In the following tutorial you will learn some basic tools used to study thermoacoustic oscillations from an experimental perspective. That is, we are going to simulate a combustion rig and obtain some measurements as if we were doing it in a laboratory test rig. 
 
 We are going to focus on two techniques:
