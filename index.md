@@ -2,6 +2,23 @@
 layout: default
 ---
 
+# Introduction
+
+In the following tutorial you will learn some basic tools used to study thermoacoustic oscillations from an experimental perspective. That is, we are going to simulate a combustion rig and obtain some measurements as if we were doing it in a laboratory test rig. 
+
+We are going to focus on two techniques:
+
+1.  Multi-Microphone-Method
+1.  Flame-Transfer-Function
+
+# Thermoacoustic Instabilities
+
+# Multi-Microphone-Method
+
+# Flame-Transfer-Function
+
+From here onwards it is the original file
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
