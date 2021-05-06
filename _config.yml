@@ -1,9 +1,9 @@
-title: Learn Thermoacoustics
-description: MATLAB/OCTAVE turorials to learn the basics of thermoacosutics.
+title: Flame Transfer Function Tutorials
+description: MATLAB/OCTAVE tutorials to learn the basics of thermoacosutics.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
 
 github:
-  zip_url: https://github.com/xoeg/Learn-Thermoacoustics/zipball/main
-  tar_url: https://github.com/xoeg/Learn-Thermoacoustics/tarball/main
+  zip_url: https://github.com/xoeg/Flame-Transfer-Function-Tutorial/zipball/main
+  tar_url: https://github.com/xoeg/Flame-Transfer-Function-Tutorial/tarball/main
