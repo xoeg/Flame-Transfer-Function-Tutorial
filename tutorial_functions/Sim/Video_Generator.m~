@@ -1,0 +1,54 @@
+%% Generate Animations:
+close all; clear all; clc
+
+% Define inlet and outlet conditions. 
+u1 = 20;       % Inlet velocity (m/s)
+T1 = 293;      % Inlet temperatre (m/s)
+p2 = 101300;   % Outlet pressure (Pa)
+Qbar = 0; % Heat release rate (W)
+
+% Define Forcing Conditions:
+Forcing.Speaker = 'ON';
+Forcing.Voltage = 1; % (V)
+Forcing.Frequency = 200; % (Hz)
+% Measurement probes:
+
+% Sampling frequency: 
+Measurement.Fs = 5000; % (Hz)
+% Photomultiplier:
+Measurement.PMT = 'OFF';
+% Differential Microphones:
+Measurement.Mic = 'ON';
+Measurement.Mic_Pos  = [-0.2,-0.4]; % (m) relative to the configuration
+% Hot wire anemometry:
+Measurement.HWA = 'ON';
+Measurement.HWA_Pos = 0.2; % (m) 
+
+% Length of the measurements:
+Measurement.Time = 2; % (s)
+
+% Preview set up:
+% figure('Visible','on')
+% fn_plot_config(Forcing,Measurement)
+
+% Simulation
+[Mean,Geom,Signals,Sim] = Run_Simulation(u1,T1,p2,Qbar,Forcing,Measurement);
+
+% hold on
+% plot(Sim.ts,Sim.Gs)
+% plot(Sim.ts,Sim.Hs)
+
+
+% Signal reconstruction:
+
+
+% return
+stepsize = 2;
+% fn_animate(Sim,stepsize)
+MAX.umax = 17;
+MAX.umin = 13;
+MAX.pmax = 2000;
+tstart = 1;
+tend = 1.1;
+fn_gifgen(Sim,stepsize,tstart,tend,MAX)
+ 
