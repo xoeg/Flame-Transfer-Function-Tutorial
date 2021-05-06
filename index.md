@@ -20,8 +20,8 @@ The Multi-Microphone-Method (MMM) is used to reconstruct the acoustic field in a
 In the following part of the tutorial we reconstruct the acoustic velocity using pressure measurements and then we compare it to the velocity measured by a hot wire anemometer. You can see the result in the following image. 
 
 * On the top left we record the velocity measured by the hot wire at a location x = 0.2 m (red).
-* On the middle left we show two pressure measurements at x = -0.2 m (dark blue) and x = -0.4 m (blue)
-* On the top right we plot in red the signal from the hot wire (same as in the top left) and in blue the signal reconstructed from the pressure measurements.
+* On the middle left we show two pressure measurements at x = -0.2 m (dark blue) and x = -0.4 m (blue).
+* On the top right we plot in red the signal from the hot wire (same as in the top left) and in blue the signal reconstructed from the pressure measurements. They are almost on top of each other!
 * At the bottom we show the acoustic pressure field and the location of the probes. 
 
 ![MMM_gif](/assets/MMM.gif)
