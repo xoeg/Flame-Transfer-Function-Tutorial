@@ -19,7 +19,7 @@ The Multi-Microphone-Method (MMM) is used to reconstruct the acoustic field in a
 ## Tutorial (MMM)
 In the following part of the tutorial we reconstruct the acoustic velocity using pressure measurements and then we copare it to the velocity measured by a hot wire anemometer. You can see the result in the following image:
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![MMM](https://www.dropbox.com/s/s6om9botb7z2koj/MMM.gif?dl=0)
 
 Once you have downloaded the files from the links at the top of the page, open the following one:
 
