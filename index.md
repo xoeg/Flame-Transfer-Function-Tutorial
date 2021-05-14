@@ -13,6 +13,8 @@ We are going to focus on these techniques:
 # Spectral estimation
 TBD
 
+* * *
+
 # Multi-Microphone-Method
 The Multi-Microphone-Method (MMM) is used to reconstruct the acoustic field in a given geometry. If we know the mean flow, the MMM can be useful when we want to estimate the acoustic velocity from pressure measurements. In fact, if we have at least 2 measurements of pressure and/or velocity we can obtain a third one at a different location using this method. 
 
@@ -29,6 +31,8 @@ In the following part of the tutorial we reconstruct the acoustic velocity using
 Once you have downloaded the files from the links at the top of the page, open the following one:
 
 *  **WK01-MMM.mlx**
+
+* * *
 
 # Flame-Transfer-Function Measurement
 TBD
