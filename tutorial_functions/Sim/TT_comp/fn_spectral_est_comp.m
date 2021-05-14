@@ -1,4 +1,4 @@
-function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
+function [f,X,PSD] = fn_spectral_est(t,x,xref,type,Opts)
     % Function that computes the spectral estimation of a real signal,
     % cross correlated with a reference signal, using a direct windowed
     % method or welch method. 
@@ -12,7 +12,12 @@ function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
     %           Opts - Optional structure with fields:
     %                   N - Zero padding length
     %                   M - Number of segments for welch mehtod
-    %                   p - Olverlapping percentage 
+    %                   p - Overlapping percentage 
+    % Outputs:
+    %           f = vector of frequencies
+    %           X = Fourier transformed signal (zero padded, windowed and
+    %           or averaged) 
+    %           PSD = Power spectral density
 
     % Sanity checks ------------------------------------------------------
     % Ensure x is a real signal:
@@ -83,9 +88,9 @@ function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
                 X = XXref ./ sqrt(XrefXref);
             end
             % PSD estimation (single sided) ------------------------------
-            P = abs(X * ECF).^2 * Ts/L;
-            P = P(1:N/2+1);
-            P(2:end-1) = 2*P(2:end-1);
+            PSD = abs(X * ECF).^2 * Ts/L;
+            PSD = PSD(1:N/2+1);
+            PSD(2:end-1) = 2*PSD(2:end-1);
             % Amplitude estimation (single sided) ------------------------
             X = X * ACF/L;
             X = X(1:N/2+1);
@@ -106,7 +111,7 @@ function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
             ECF = 1/rms(w);     % Energy correction factor
             % Loop each segment of the signal:
             M = size(xs,2);
-            P = zeros(N/2+1,1);
+            PSD = zeros(N/2+1,1);
             X = zeros(N/2+1,1);
             for j = 1:M
                 % FFT ----------------------------------------------------
@@ -127,7 +132,7 @@ function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
                 Ps = abs(Xs * ECF).^2 * Ts/Lm;
                 Ps = Ps(1:N/2+1);
                 Ps(2:end-1) = 2*Ps(2:end-1);
-                P = P + Ps;
+                PSD = PSD + Ps;
                 % Amplitude estimation (single sided) --------------------
                 Xs = Xs * ACF/Lm;
                 Xs = Xs(1:N/2+1);
@@ -135,7 +140,7 @@ function [f,X,P] = fn_spectral_est(t,x,xref,type,Opts)
                 X = X + Xs;
             end
             % Average:
-            P = P/M;
+            PSD = PSD/M;
             X = X/M;
     end
 end

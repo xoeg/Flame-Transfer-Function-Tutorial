@@ -60,9 +60,10 @@ function [] = fn_gifgen(Sim,stepsize,t_start,t_end,MAX)
     end
     
     
-    fig = figure;
+    fig = figure('Color',[1 1 1]);
     fig.Visible  = 'on';
-    fig.Position = [100 100 1600*3 900*3];
+    fig.Position = [100 100 900 700];
+%     fig.Position = [100 100 1600*3 900*3];
     
     m = 1;
     Ts = [];
@@ -125,7 +126,7 @@ function [] = fn_gifgen(Sim,stepsize,t_start,t_end,MAX)
         ax1.YColor = [1 1 1];
         box off
         
-        ax1.FontSize = 16;
+        ax1.FontSize = 10;
         fontsz = ax1.FontSize;
         
         % Plot measurements:
@@ -197,7 +198,7 @@ function [] = fn_gifgen(Sim,stepsize,t_start,t_end,MAX)
                 jmin = max(1,j-1000);
                 xlim([tsim(jmin) tsim(j)])
             else
-                jmin = length(Ts) - 1000;
+                jmin = length(Ts) - 300;
                 xlim([Ts(jmin) tsim(j)])
             end
             ylim([-1,1]*pmax)
@@ -237,7 +238,7 @@ function [] = fn_gifgen(Sim,stepsize,t_start,t_end,MAX)
                 jmin = max(1,j-1000);
                 xlim([tsim(jmin) tsim(j)])
             else
-                jmin = length(Ts) - 1000;
+                jmin = length(Ts) - 300;
                 xlim([Ts(jmin) tsim(j)])
             end
             ylim([umin, umax])
@@ -266,8 +267,8 @@ function [] = fn_gifgen(Sim,stepsize,t_start,t_end,MAX)
             ax2.TickLabelInterpreter = 'Latex';
             lg = legend('HWA','Reconstructed');
             lg.Interpreter = 'Latex';
-            lg.Location = 'northeast';
-
+            lg.Location = 'northoutside';
+            lg.Orientation = 'horizontal';
             
             
             if j > 2 && ix_start == 1

@@ -1,4 +1,4 @@
-function [] = fn_plot_Signals(Signals)
+function [] = fn_plot_Signals(Signals,Measurement)
     % Function to plot all the signals
     
     % Determine the number of plots
@@ -60,6 +60,8 @@ function [] = fn_plot_Signals(Signals)
                 ax = gca;
                 ax.TickLabelInterpreter = 'Latex';
                 box on
+                x = Measurement.Mic_Pos(j);
+                legend(['$x = ',num2str(x),'$ m'],'Interpreter','Latex')
                 % Zoom in
                 nexttile
                 plot(t,X(j,:),'Color',clr)
@@ -81,6 +83,8 @@ function [] = fn_plot_Signals(Signals)
             ax = gca;
             ax.TickLabelInterpreter = 'Latex';
             box on
+            x = Measurement.HWA_Pos;
+            legend(['$x = ',num2str(x),'$ m'],'Interpreter','Latex')
             % Zoom in 
             nexttile
             plot(t,X,'Color',clr)

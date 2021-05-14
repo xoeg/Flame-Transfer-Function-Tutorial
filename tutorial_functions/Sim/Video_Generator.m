@@ -57,7 +57,7 @@ Sim.Measurement.REC = 'ON';
 Sim.ur = ur;
 
 
-% Animate:
+%% Animate:
 stepsize = 1;
 % fn_animate(Sim,stepsize)
 MAX.umax = 17;
