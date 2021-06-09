@@ -14,12 +14,15 @@ function [Mean,Geom,Signals,Sim] = Run_Simulation(u1,T1,p2,Qbar,Forcing,Measurem
     % Set up Forcing:
     if strcmp(Forcing.Speaker,'ON')
         Geom.Speaker = true;
+        % Set up Forcing:
+        Mean.Force.V = Forcing.Voltage * 1e-2;
+        Mean.Force.omega = Forcing.Frequency * 2*pi;
     else
         Geom.Speaker = false;
+        % Set up Forcing:
+        Mean.Force.V = 0;
+        Mean.Force.omega = 0;
     end
-    % Set up Forcing:
-    Mean.Force.V = Forcing.Voltage * 1e-2;
-    Mean.Force.omega = Forcing.Frequency * 2*pi;
     
     % Time marching the simulation =======================================
     dt    = 1/10007;               % Time step of simulation
@@ -58,9 +61,9 @@ function [Mean,Geom,Signals,Sim] = Run_Simulation(u1,T1,p2,Qbar,Forcing,Measurem
         Signals.PMT = Qrs;
     end
     % Microphones: -------------------------------------------------------
-    x_mic = Measurement.Mic_Pos;
-    Acoustic_only = true;
     if strcmp(Measurement.Mic,'ON')
+        x_mic = Measurement.Mic_Pos;
+        Acoustic_only = true;
         Lu = Geom.Lu;
         Lb = Geom.Lb;
         P_mic = zeros(length(x_mic),length(t));
@@ -93,9 +96,9 @@ function [Mean,Geom,Signals,Sim] = Run_Simulation(u1,T1,p2,Qbar,Forcing,Measurem
         Signals.P_mic = P_mic;
     end
     % Hot wire: ----------------------------------------------------------
-    x_hw = Measurement.HWA_Pos;
-    Acoustic_only = false;
     if strcmp(Measurement.HWA,'ON')
+        x_hw = Measurement.HWA_Pos;
+        Acoustic_only = false;
         Lu = Geom.Lu;
         Lb = Geom.Lb;
         U_hw = zeros(length(x_hw),length(t));

@@ -80,7 +80,8 @@ function [Mean] = fn_mean_flow(u1,T1,p2,Qbar,Geom)
     Mean.Su = Su;   
     Mean.Abar = Abar ;
 
-    Mean.xibar= Unstable_Flame();
+    Mean.xibar = Unstable_Flame();
+%     Mean.xibar = xibar;
     
     Mean.Tu = Tu;
     Mean.Td = Td;

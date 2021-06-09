@@ -1,4 +1,4 @@
-function [] = fn_plot_Signals(Signals,Measurement)
+function [] = fn_plot_Signals(Signals,Measurement,Zoom_in_time_steps)
     % Function to plot all the signals
     
     % Determine the number of plots
@@ -18,10 +18,9 @@ function [] = fn_plot_Signals(Signals,Measurement)
     % Zoom in region:
     t = Signals.t;
     nn = length(t);
-    XL = [t(round(nn/2)) t(round(nn/2) + 100)];
+    XL = [t(round(nn/2)) t(round(nn/2) + Zoom_in_time_steps)];
     % Plot the figure
-    figure('Visible','on','Color','w')
-    tiledlayout(N,3)
+    figure('Color','w')
     jj = 1;
     for k = 1:numel(fn)
         if strcmp(fn{k},'Forcing')
@@ -29,7 +28,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
             X = Signals.Forcing;
             for j = 1:Nm
                 clr = 'k';
-                nexttile(jj,[1,2])
+                subplot(N,3,[jj,jj+1])
                 plot(t,X(j,:),'Color',clr)
                 xlabel('$t$ (s)','Interpreter','Latex')
                 ylabel('$F(t)$ (V)','Interpreter','Latex')
@@ -37,7 +36,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
                 ax.TickLabelInterpreter = 'Latex';
                 box on
                 % Zoom in
-                nexttile
+                subplot(N,3,jj+2)
                 plot(t,X(j,:),'Color',clr)
                 xlabel('$t$ (s)','Interpreter','Latex')
                 ylabel('$F(t)$ (V)','Interpreter','Latex')
@@ -53,7 +52,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
             X = Signals.P_mic;
             for j = 1:Nm
                 clr = color_palette('Bl');
-                nexttile(jj,[1,2])
+                subplot(N,3,[jj,jj+1])
                 plot(t,X(j,:),'Color',clr)
                 xlabel('$t$ (s)','Interpreter','Latex')
                 ylabel('$p''(t)$ (Pa)','Interpreter','Latex')
@@ -63,7 +62,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
                 x = Measurement.Mic_Pos(j);
                 legend(['$x = ',num2str(x),'$ m'],'Interpreter','Latex')
                 % Zoom in
-                nexttile
+                subplot(N,3,jj+2)
                 plot(t,X(j,:),'Color',clr)
                 xlabel('$t$ (s)','Interpreter','Latex')
                 ylabel('$p''(t)$ (Pa)','Interpreter','Latex')
@@ -76,7 +75,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
         elseif strcmp(fn{k},'U_hw')
             clr = color_palette('Rd');
             X = Signals.U_hw;
-            nexttile(jj,[1,2])
+            subplot(N,3,[jj,jj+1])
             plot(t,X,'Color',clr)
             xlabel('$t$ (s)','Interpreter','Latex')
             ylabel('$u(t)$ (m/s)','Interpreter','Latex')
@@ -86,7 +85,7 @@ function [] = fn_plot_Signals(Signals,Measurement)
             x = Measurement.HWA_Pos;
             legend(['$x = ',num2str(x),'$ m'],'Interpreter','Latex')
             % Zoom in 
-            nexttile
+            subplot(N,3,jj+2)
             plot(t,X,'Color',clr)
             xlabel('$t$ (s)','Interpreter','Latex')
             ylabel('$u(t)$ (m/s)','Interpreter','Latex')
@@ -98,7 +97,15 @@ function [] = fn_plot_Signals(Signals,Measurement)
         elseif strcmp(fn{k},'PMT')
             clr = color_palette('Yl');
             X = Signals.PMT;
-            nexttile(jj,[1,2])
+            subplot(N,3,[jj,jj+1])
+            plot(t,X,'Color',clr)
+            xlabel('$t$ (s)','Interpreter','Latex')
+            ylabel('$I(t)$ ','Interpreter','Latex')
+            ax = gca;
+            ax.TickLabelInterpreter = 'Latex';
+            box on
+            % Zoom in 
+            subplot(N,3,jj+2)
             plot(t,X,'Color',clr)
             xlabel('$t$ (s)','Interpreter','Latex')
             ylabel('$I(t)$ ','Interpreter','Latex')
