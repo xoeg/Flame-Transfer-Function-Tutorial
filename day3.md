@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title:  Day 3 - Time-domain simulations and data processing
+description: Nicholas Noiray - ETH
 ---
 
 ## Welcome to another page

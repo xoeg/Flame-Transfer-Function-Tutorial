@@ -30,7 +30,7 @@ Once you have downloaded the files from the links at the top of the page, open t
 
 TBD
 
-For the experimental part of the tutorial download the data from the [following link] (https://bit.ly/3cu1jDt). 
+For the experimental part of the tutorial download the data from the [following link](https://bit.ly/3cu1jDt). 
 
 * * *
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Day 2 - Flame Impluse Response
+description: Guillaume Fournier - TUM
 ---
 
 ## Welcome to another page

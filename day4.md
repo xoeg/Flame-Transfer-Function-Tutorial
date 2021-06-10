@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Day 4 -  Measurement of the Flame Transfer Matrix
+description: José G. Aguilar - NTNU
 ---
 
 ## Welcome to another page
