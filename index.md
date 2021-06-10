@@ -6,6 +6,8 @@ The following tutorials are part of the Annulight workshop 4 on Flame Transfer F
 
 **Dates**: June 14, 15, 16 and 18
 
+![Forced_Flame_gif](/assets/Forced_Flame.gif)
+
 # Content:
 * [Day 1: Measurement of a Flame Transfer Function (José G. Aguilar - NTNU)](./day1.html)
 * [Day 2: Flame Impluse Response (Guillaume Fournier - TUM)](./day2.html)
