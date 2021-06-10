@@ -37,6 +37,4 @@ For the experimental part of the tutorial download the data from the [following 
 
 ## Welcome to another page
 
-_yay_
-
 [back](./)
