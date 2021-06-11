@@ -26,13 +26,14 @@ In the following part of the tutorial, we reconstruct the acoustic velocity usin
 
 ![MMM_gif](/assets/MMM.gif)
 
+
 Once you have downloaded the files from the links at the top of the page, open the following one:
 *  **Day 1 \ WK01-MMM.mlx**
 
 * * * 
 
 ## Flame-Transfer-Function Measurement
-Flame transfer functions are used on linear stability analyses to determine weather a given operating point is prone to thermo-acoustic instabilities.  
+Flame transfer functions are used on linear stability analyses to determine whether a given operating point is prone to thermo-acoustic instabilities.  
 
 ### FTF Tutorial 
 In this tutorial we will learn how to measure FTFs. For this we will need to force a flame and record how it responds. You can see an example in the following animation.
@@ -40,6 +41,8 @@ In this tutorial we will learn how to measure FTFs. For this we will need to for
 * On the left plot we have the pressure measurements recorded by the microphones (blue probes).
 * On the right plot we have the heat release as captured by the PMT (yellow box).
 * On the bottom plot you can see the flame in our combustor being forced. 
+
+After some treatment of these measurements one can compute the FTF. 
 
 ![FTF_gif](/assets/FTF.gif)
 
