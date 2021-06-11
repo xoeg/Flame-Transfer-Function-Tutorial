@@ -47,7 +47,7 @@ After some treatment of these measurements one can compute the FTF.
 ![FTF_gif](/assets/FTF.gif)
 
 Once you have finished the MMM tutorial, open the following one:
-*  **Day 1 \ WK01-FTF.mlx** 
+*  **Day 1 \ WK02-FTF.mlx** 
 
 For the experimental part of the tutorial download the data from the [following link](https://bit.ly/3cu1jDt). 
 
