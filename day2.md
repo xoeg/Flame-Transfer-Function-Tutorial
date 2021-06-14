@@ -6,7 +6,7 @@ description: Guillaume Fournier / Prof. Wolfgang Polifke - TUM
 
 # Day 2 - Representation of flame dynamics in terms of phasors and flame impulse response.
 
-Phasors and the flame impulse response are different ways of analyze and visualize the flame response.
+Phasors and the flame impulse response are different ways to analyze and visualize the flame response.
 
 ![UIR_gif](/assets/GIF_UIR.gif)
 
