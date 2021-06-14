@@ -16,7 +16,7 @@ The tutorial for day 1 is divided in 2 parts:
 Before starting take a look at the following video. The combustion group at NTNU introduce the basics of the FTF and show the experimental set up required to measure one. 
 
 <video width="" height="" autoplay>
-<source src="" type="https://www.dropbox.com/s/0xt5hjvf0l9995n/FTF_video.mp4?dl=0" />
+<source src="" type="https://www.dropbox.com/s/0xt5hjvf0l9995n/FTF_video.mp4?raw=1" />
 </video>
 
 * * *
