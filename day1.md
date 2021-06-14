@@ -2,6 +2,7 @@
 layout: default
 title: Day 1 - Measurement of a Flame Transfer Function
 description: José G. Aguilar - NTNU
+dropboxvid: 0xt5hjvf0l9995n/FTF_video.mp4
 ---
 # Day 1 - Measurement of a Flame Transfer Function
 
@@ -15,9 +16,7 @@ The tutorial for day 1 is divided in 2 parts:
 
 Before starting take a look at the following video. The combustion group at NTNU introduce the basics of the FTF and show the experimental set up required to measure one. 
 
-<video width="520px" controls>
-  <source src="https://www.dropbox.com/s/0xt5hjvf0l9995n/FTF_video.mp4?raw=1"/>
-</video>
+{% include dropboxplayer.html id=page.dropboxvid %}
 
 * * *
 
