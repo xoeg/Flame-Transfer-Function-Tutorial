@@ -2,7 +2,7 @@
 layout: default
 title: Day 1 - Measurement of a Flame Transfer Function
 description: José G. Aguilar - NTNU
-dropboxvid: 0xt5hjvf0l9995n/FTF_video.mp4
+dropboxvid: h4zig05wxymmz2j/FTF_video.mp4
 ---
 # Day 1 - Measurement of a Flame Transfer Function
 
