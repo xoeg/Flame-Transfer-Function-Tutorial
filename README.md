@@ -5,3 +5,6 @@ Annulight Workshop 4 - Flame Transfer Functions: theory, analysis and applicatio
 
 ### Day 1 - José G. Aguilar NTNU (jose.aguilar@ntnu.no)
 PDFs for each tutorial are available if there is no access to livescripts. 
+
+### Day 2 - Guillaume Fournier TUM (fournier@tfd.mw.tum.de)
+
