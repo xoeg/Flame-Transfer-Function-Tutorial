@@ -8,3 +8,5 @@ PDFs for each tutorial are available if there is no access to livescripts.
 
 ### Day 2 - Guillaume Fournier / Prof. Wolfgang Polifke TUM (fournier@tfd.mw.tum.de)
 
+### Day 3 - Nicolas Noiray ETH (noirayn@ethz.ch>)
+
