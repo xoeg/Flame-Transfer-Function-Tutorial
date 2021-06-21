@@ -10,8 +10,8 @@ Flame Transfer Matrices (FTM) are a generalization of the concept introduced by 
 
 # FTM tutorial
 In this tutorial we will measure:
-* The **Burner Transfer Matrix**. This shows the relationship between the upstream and downstream acoustic variables in a during cold flow operation.
-* The **Flame Transfer Matrix**. This shows the relationship between the upstream and downstream acoustic variables in a during hot flow operation.
+* The **Burner Transfer Matrix**. This shows the relationship between the upstream and downstream acoustic variables during cold flow operation.
+* The **Flame Transfer Matrix**. This shows the relationship between the upstream and downstream acoustic variables during hot flow operation.
 
 The following figure shows the latter, where the F22 element contains embedded the FTF.
 ![FTM_png](/assets/FTM.png)
