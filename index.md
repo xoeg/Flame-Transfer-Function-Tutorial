@@ -10,15 +10,15 @@ The following tutorials were part of the Annulight workshop 4 on Flame Transfer 
 
 * * *
 # Content:
-* Day 1 and day 4: tutorials by José G. Aguilar (NTNU)
+Days 1 and 4: tutorials by José G. Aguilar (NTNU)
  - [Multi-Microphone-Method](./MMM.html)
  - [Measurement of a Flame Transfer Function](./FTF.html)
  - [Measurement of a Flame Transfer Matrix](./FTM.html)
 
-* Day 2: tutorials by Guillaume Fournier (TUM)
+Day 2: tutorials by Guillaume Fournier (TUM)
  - [Flame impulse response](./FIR.html)
 
-* Day 3: tutorials by Nicolas Noiray (ETH)
+Day 3: tutorials by Nicolas Noiray (ETH)
  - Time-domain simulations and data processing
 
 * * *
