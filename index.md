@@ -20,6 +20,3 @@ Day 2: tutorials by Guillaume Fournier (TUM)
 
 Day 3: tutorials by Nicolas Noiray (ETH)
  - Time-domain simulations and data processing
-
-* * *
-
