@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Day 1 - Measurement of a Flame Transfer Function
+title: Multi-Microphone-Method
 description: José G. Aguilar - NTNU
 dropboxvid: h4zig05wxymmz2j/FTF_video.mp4
 ---
