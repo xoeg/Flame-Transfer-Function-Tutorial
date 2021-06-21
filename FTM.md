@@ -19,4 +19,6 @@ The following figure shows the latter, where the F22 element contains embedded t
 Once you have downloaded the files from the links at the top of the page, open the following one:
 *  **Day 1 - Day 4 \ WK03-FTM.mlx**
 
+* * *
+
 [Back to contents](./)
