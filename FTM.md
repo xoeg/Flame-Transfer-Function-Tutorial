@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Measurement of the Flame Transfer Matrix
+title: Measurement of a Flame Transfer Matrix
 description: José G. Aguilar - NTNU
 ---
 Flame Transfer Matrices (FTM) are a generalization of the concept introduced by the Flame Transfer Function. This time instead of studying the response of just the heat release to velocity fluctuations, we are interested in studying the full acoustic response of the burner and the flame. To achieve this, we need to force the combustor upstream and downstream of the region of interest.

@@ -1,6 +1,6 @@
 ---
 layout: default
-Flame Impulse Response
+title: Flame Impulse Response
 description: Guillaume Fournier / Prof. Wolfgang Polifke - TUM
 ---
 
